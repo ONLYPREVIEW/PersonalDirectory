@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Personel Rehberi</title>
+  <link rel="stylesheet" href="rehber.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script src="rehber.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="sidebar-top">
+        <img src="torku.png" alt="Torku Logo" class="logo" />
+        <button class="nav-button active"><i class="fa-solid fa-address-book"></i> Rehber</button>
+      </div>
+
+      <div class="sidebar-bottom">
+        <button class="nav-button profile"  style="color: #1D8348;">Kullanıcı Bilgilerim</button>
+        <button class="nav-button logout" style="color: #FFFDFD;">Çıkış Yap</button>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <div class="header">
+        <h1>Personel Rehberi</h1>
+        <div class="header-actions">
+          <input type="text" id="searchInput" placeholder="Ara..." />
+          <button class="add-button"><i class="fa fa-plus"></i> Yeni Kayıt Ekle</button>
+        </div>
+      </div>
+
+      <div class="card-header">
+        <div class="field isim-baslik">İSİM</div>
+        <div>SOYİSİM</div>
+        <div>ID</div>
+        <div>FİRMA</div>
+        <div>TELEFON</div>
+        <div></div>
+      </div>
+
+      <div id="personelListesi" class="card-list"></div>
+
+      <div class="pagination">
+        <button class="page-btn active">1</button>
+        <button class="page-btn">2</button>
+        <button class="page-btn">3</button>
+        <button class="page-btn">Sonraki</button>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

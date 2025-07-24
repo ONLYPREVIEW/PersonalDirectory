@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f7f8fa;
+  font-family: Arial, sans-serif;
+}
+
+.login-container {
+  width: 820px;
+  height: 608px;
+  background: #fff;
+  border: 1px solid #d1cfcf;
+  border-radius: 12px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  margin: 60px auto 160px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 230px;
+  margin-bottom: 50px;
+  margin-top: 60px;
+}
+
+.input-group {
+  position: relative;
+  width: 332.98px;
+  height: 49.92px;
+  background: #fff;
+  border: 1px solid #f0ebeb;
+  border-radius: 8px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.input-group input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 14px;
+  padding-left: 8px;
+  background-color: transparent;
+}
+
+.input-group .icon {
+  color: #5e5e5e;
+  font-size: 14px;
+}
+
+.login-button {
+  width: 332.98px;
+  height: 49.92px;
+  background-color: #00a000;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #008c00;
+}
+
+.forgot-password {
+  font-size: 12px;
+  color: #777;
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.toggle-password {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 20px;
+  width: 332.98px;
+  justify-content: start;
+}
+
+.toggle-password input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #00a000; /* yeşil kutu için */
+  cursor: pointer;
+}
+
+.toggle-password label {
+  cursor: pointer;
+}
+
+.toggle-eye {
+  position: absolute;
+  right: 15px;
+  cursor: pointer;
+  color: #5e5e5e;
+}

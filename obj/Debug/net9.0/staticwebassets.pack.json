@@ -1,0 +1,53 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\userr\\Desktop\\InternShipProject1\\wwwroot\\Torku.png",
+      "PackagePath": "staticwebassets\\Torku.png"
+    },
+    {
+      "Id": "C:\\Users\\userr\\Desktop\\InternShipProject1\\wwwroot\\login.css",
+      "PackagePath": "staticwebassets\\login.css"
+    },
+    {
+      "Id": "C:\\Users\\userr\\Desktop\\InternShipProject1\\wwwroot\\login.html",
+      "PackagePath": "staticwebassets\\login.html"
+    },
+    {
+      "Id": "C:\\Users\\userr\\Desktop\\InternShipProject1\\wwwroot\\login.js",
+      "PackagePath": "staticwebassets\\login.js"
+    },
+    {
+      "Id": "C:\\Users\\userr\\Desktop\\InternShipProject1\\wwwroot\\rehber.css",
+      "PackagePath": "staticwebassets\\rehber.css"
+    },
+    {
+      "Id": "C:\\Users\\userr\\Desktop\\InternShipProject1\\wwwroot\\rehber.html",
+      "PackagePath": "staticwebassets\\rehber.html"
+    },
+    {
+      "Id": "C:\\Users\\userr\\Desktop\\InternShipProject1\\wwwroot\\rehber.js",
+      "PackagePath": "staticwebassets\\rehber.js"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.InternShipProject1.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.InternShipProject1.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.InternShipProject1.props",
+      "PackagePath": "build\\InternShipProject1.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.InternShipProject1.props",
+      "PackagePath": "buildMultiTargeting\\InternShipProject1.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.InternShipProject1.props",
+      "PackagePath": "buildTransitive\\InternShipProject1.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
