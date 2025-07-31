@@ -83,6 +83,10 @@ body {
 .forgot-password:hover {
   text-decoration: underline;
 }
+.error-message{
+  color: rgb(215, 14, 14);
+  text-decoration: underline;
+}
 
 .toggle-password {
   display: flex;
