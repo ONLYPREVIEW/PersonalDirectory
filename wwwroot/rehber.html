@@ -12,11 +12,10 @@
     <aside class="sidebar">
       <div class="sidebar-top">
         <img src="torku.png" alt="Torku Logo" class="logo" />
-        <button class="nav-button active"><i class="fa-solid fa-address-book"></i> Rehber</button>
+        <button class="nav-button active" id="btnRehber"><i class="fa-solid fa-address-book"></i> Rehber</button>
       </div>
-
       <div class="sidebar-bottom">
-        <button class="nav-button profile"  style="color: #1D8348;">Kullanıcı Bilgilerim</button>
+        <button class="nav-button profile" id="btnProfil" style="color: #1D8348;">Kullanıcı Bilgilerim</button>
         <button class="nav-button logout" style="color: #FFFDFD;">Çıkış Yap</button>
       </div>
     </aside>
@@ -26,15 +25,22 @@
         <h1>Personel Rehberi</h1>
         <div class="header-actions">
           <input type="text" id="searchInput" placeholder="Ara..." />
-          <button class="add-button"><i class="fa fa-plus"></i> Yeni Kayıt Ekle</button>
+          <button class="add-button" id="openModalBtn"><i class="fa fa-plus"></i> Yeni Kayıt Ekle</button>
         </div>
       </div>
 
+      <!-- ✅ Sıralanabilir başlıklar -->
       <div class="card-header">
-        <div class="field isim-baslik">İSİM</div>
-        <div>SOYİSİM</div>
+        <div class="field isim-baslik">
+          İSİM <span class="sort-icon" data-sort="isim">⇅</span>
+        </div>
+        <div>
+          SOYİSİM <span class="sort-icon" data-sort="soyisim">⇅</span>
+        </div>
         <div>ID</div>
-        <div>FİRMA</div>
+        <div>
+          FİRMA <span class="sort-icon" data-sort="firma">⇅</span>
+        </div>
         <div>TELEFON</div>
         <div></div>
       </div>
@@ -47,7 +53,91 @@
         <button class="page-btn">3</button>
         <button class="page-btn">Sonraki</button>
       </div>
+
+      <!-- ✅ Kullanıcı Bilgilerim Sekmesi -->
+      <section class="user-info-page" style="display: none;">
+        <h2>Kullanıcı Bilgilerim</h2>
+        <div class="profile-card">
+          <div class="profile-avatar">EK</div>
+          <div class="profile-name">Emir Ata Karagenç</div>
+        </div>
+
+        <div class="info-group">
+          <div class="form-row">
+            <div>
+              <label>İsim</label>
+              <input type="text" value="Emir Ata" readonly>
+            </div>
+            <div>
+              <label>Soyisim</label>
+              <input type="text" value="Karagenç" readonly>
+            </div>
+          </div>
+          <div class="form-row">
+            <div>
+              <label>E-posta Adresi</label>
+              <input type="text" value="emiratakaragenc33@gmail.com" readonly>
+            </div>
+            <div>
+              <label>Telefon Numarası</label>
+              <input type="text" value="0532 111 2233" readonly>
+            </div>
+          </div>
+        </div>
+
+        <hr style="margin: 30px 0; border-color: #eee;">
+        <h3>Şifreyi Değiştir</h3>
+        <div class="password-group">
+          <div class="form-row single-column">
+            <div class="password-wrapper">
+              <input type="password" placeholder="Mevcut Şifre" id="currentPassword">
+              <i class="fa fa-eye toggle-password"></i>
+            </div>
+          </div>
+          <div class="form-row single-column">
+            <div class="password-wrapper">
+              <input type="password" placeholder="Yeni Şifre" id="newPassword">
+              <i class="fa fa-eye toggle-password"></i>
+            </div>
+          </div>
+          <div class="form-row single-column">
+            <div class="password-wrapper">
+              <input type="password" placeholder="Yeni Şifre (Tekrar)" id="confirmPassword">
+              <i class="fa fa-eye toggle-password"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="button-container">
+          <div class="button-row center-buttons">
+            <button class="cancel-button">İptal</button>
+            <button class="save-button">Değişiklikleri Kaydet</button>
+          </div>
+        </div>
+      </section>
     </main>
+  </div>
+
+  <!-- ✅ MODAL (Kayıt ekleme penceresi) -->
+  <div id="modal" class="modal" style="display: none;">
+    <div class="modal-content">
+      <span class="close" id="closeModalBtn">&times;</span>
+      <h2>Yeni Kişi Ekle</h2>
+      <input type="text" id="isimInput" placeholder="İsim" />
+      <input type="text" id="soyisimInput" placeholder="Soyisim" />
+      <input type="number" id="idInput" placeholder="ID" />
+      <input type="text" id="firmaInput" placeholder="Firma" />
+      <input type="text" id="telefonInput" placeholder="Telefon" maxlength="13" />
+      <button id="kayitEkleButton">Kaydı Ekle</button>
+    </div>
+  </div>
+
+  <!-- ✅ Bildirim popup'ları -->
+  <div id="popupSuccess" class="popup-success">
+    <p>Şifre başarıyla güncellendi</p>
+  </div>
+  <div id="popupKayit" class="popup-success">
+    <p>Yeni kayıt eklendi</p>
   </div>
 </body>
 </html>
